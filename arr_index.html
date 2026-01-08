@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Algorithmic Responsibility Record (ARR)</title>
+  <meta name="description" content="The Algorithmic Responsibility Record (ARR) is a pre-incident accountability record for algorithmic decision systems, designed for regulatory, legal, and post-incident scrutiny." />
+  <meta name="keywords" content="Algorithmic Responsibility, AI Governance, Accountability, Regulation, Risk Management, ARR" />
+  <meta name="author" content="Nojan Jadidi" />
+  <style>
+    :root{--bg:#fff;--text:#111;--muted:#555;--border:#ddd;--maxw:1120px}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    header{border-bottom:1px solid var(--border)}
+    nav{max-width:var(--maxw);margin:0 auto;padding:1rem 2rem;display:flex;align-items:center;justify-content:space-between}
+    nav ul{list-style:none;display:flex;gap:1.5rem;padding:0;margin:0}
+    main{max-width:var(--maxw);margin:0 auto;padding:3rem 2rem}
+    section{margin-bottom:4rem}
+    h1{font-size:2.3rem;line-height:1.25;margin-bottom:1rem}
+    h2{font-size:1.6rem;margin-bottom:1rem}
+    p{max-width:760px}
+    .muted{color:var(--muted)}
+    .hero p{font-size:1.1rem}
+    ul{max-width:760px}
+    .box{border:1px solid var(--border);padding:1.5rem;margin-top:1.5rem}
+    .diagram{margin-top:2.5rem;max-width:640px}
+    footer{border-top:1px solid var(--border);padding:2rem;font-size:.9rem;color:var(--muted)}
+    @media(max-width:768px){nav{flex-direction:column;align-items:flex-start;gap:1rem}nav ul{gap:1rem}main{padding:2rem 1.5rem}}
+  </style>
+</head>
+<body>
+<header>
+  <nav aria-label="Primary navigation">
+    <strong>ARR</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#records">What It Records</a></li>
+      <li><a href="#status">Status</a></li>
+      <li><a href="#stewardship">Stewardship</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero">
+    <h1>Algorithmic Responsibility Record (ARR)</h1>
+    <p class="muted">Pre-incident accountability for algorithmic decision systems</p>
+    <p>The <strong>Algorithmic Responsibility Record (ARR)</strong> is a structured, pre-incident record that documents who accepted responsibility for an algorithmic decision, under what constraints, and with what residual risk.</p>
+    <p>When something goes wrong, institutions are judged on what they recorded <em>before deployment</em> — not on what they can explain afterward.</p>
+  </section>
+  <section id="about">
+    <h2>The problem ARR addresses</h2>
+    <p>Most AI governance efforts focus on model performance, post-hoc explanation, ethical principles, or compliance checklists. These approaches routinely fail under regulatory, legal, or investigative scrutiny because they do not answer the first questions asked after an incident:</p>
+    <ul>
+      <li>Who decided this system could be used?</li>
+      <li>What was the system explicitly allowed to do?</li>
+      <li>Who could override it?</li>
+      <li>What risks were knowingly accepted?</li>
+      <li>Where was responsibility formally recorded?</li>
+    </ul>
+    <p>In many organisations, the answer is simple: <strong>it wasn’t</strong>. ARR makes that absence visible.</p>
+  </section>
+  <section id="records">
+    <h2>What an ARR records</h2>
+    <div class="box">
+      <ul>
+        <li>Decision identity</li>
+        <li>System provenance (model, version, dependencies)</li>
+        <li>Decision boundaries (permitted and prohibited actions)</li>
+        <li>Human oversight and escalation paths</li>
+        <li>Explicit risk acceptance, including residual risk</li>
+        <li>Override authority and conditions</li>
+        <li>Formal attestation of accountability</li>
+      </ul>
+    </div>
+    <div class="diagram" aria-hidden="true">
+      <svg viewBox="0 0 640 120" xmlns="http://www.w3.org/2000/svg">
+        <rect x="20" y="40" width="180" height="40" fill="none" stroke="#111"/>
+        <text x="110" y="65" text-anchor="middle" font-size="14">Decision</text>
+        <line x1="200" y1="60" x2="320" y2="60" stroke="#111"/>
+        <rect x="320" y="40" width="220" height="40" fill="none" stroke="#111"/>
+        <text x="430" y="65" text-anchor="middle" font-size="14">Responsibility Record</text>
+        <line x1="540" y1="60" x2="620" y2="60" stroke="#111"/>
+        <text x="580" y="65" text-anchor="middle" font-size="14">Scrutiny</text>
+      </svg>
+    </div>
+  </section>
+  <section id="status">
+    <h2>Current status</h2>
+    <p><strong>ARR Practitioner Standard v0.1</strong> is published as a public working draft. Early paid pilot engagements are underway with organisations operating under regulatory pressure.</p>
+    <p>ARR is intentionally narrow. Its power comes from restraint.</p>
+  </section>
+  <section id="stewardship">
+    <h2>Stewardship</h2>
+    <p>ARR is developed and stewarded by <strong>Nojan Jadidi</strong>.</p>
+    <p>I work on how organisations record, assign, and survive responsibility for algorithmic decisions — before something goes wrong.</p>
+  </section>
+</main>
+<footer>
+  <p>Responsibility that is not recorded in advance is rarely believed afterward.</p>
+</footer>
+</body>
+</html>
