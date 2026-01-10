@@ -20,6 +20,36 @@
   <meta property="og:type" content="website" />
 
   <style>
+    main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 3rem 2rem;
+
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;        /* <-- horizontal centring */
+  text-align: center;         /* <-- text centring */
+}
+
+section {
+  margin: 2.5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* <-- centre section contents */
+}
+
+p, ul {
+  max-width: var(--content);
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
     :root{
       --bg:#fff;
       --text:#111;
