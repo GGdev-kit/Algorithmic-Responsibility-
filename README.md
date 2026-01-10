@@ -1,1 +1,1 @@
-# Algorithmic-Responsibility-
+# Algorithmic Responsibility
